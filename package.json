@@ -1,7 +1,7 @@
 {
   "name": "@unmock/jaymock-cli",
   "version": "1.0.0",
-  "description": "Generate fake JSON test data, right from the terminal.",
+  "description": "Mock an API and generate fake JSON test data, right from the terminal.",
   "bin": {
     "jaymock": "cli.js"
   },

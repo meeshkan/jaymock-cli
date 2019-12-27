@@ -2,7 +2,7 @@
 
 [![CircleCI](https://img.shields.io/circleci/build/github/unmock/jaymock-cli?style=for-the-badge)](https://circleci.com/gh/unmock/jaymock-cli) [![XO](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=for-the-badge)](https://github.com/xojs/xo) [![Codecov](https://img.shields.io/codecov/c/github/unmock/jaymock-cli?style=for-the-badge)](https://codecov.io/gh/unmock/jaymock-cli)
 
-> Generate fake JSON test data, right from the terminal.
+> Mock an API and generate fake JSON test data, right from the terminal.
 
 ## Install
 
