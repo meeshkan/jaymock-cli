@@ -1,0 +1,46 @@
+{
+  "name": "@unmock/jaymock-cli",
+  "version": "1.0.0",
+  "description": "Generate fake JSON test data, right from the terminal.",
+  "bin": {
+    "jaymock": "cli.js"
+  },
+  "scripts": {
+    "dev": "npm explore @unmock/micro-jaymock -- npm run dev",
+    "test": "xo && ava",
+    "coverage": "nyc npm test",
+    "coverage:upload": "nyc report --reporter=lcov && codecov",
+    "coverage:check": "nyc report && nyc check-coverage --lines 100 --functions 100 --branches 100"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unmock/jaymock-cli.git"
+  },
+  "author": "unmock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unmock/jaymock-cli/issues"
+  },
+  "homepage": "https://github.com/unmock/jaymock-cli#readme",
+  "dependencies": {
+    "@unmock/jaymock": "^1.0.10",
+    "@unmock/micro-jaymock": "github:unmock/micro-jaymock",
+    "execa": "^4.0.0",
+    "get-stdin": "^7.0.0",
+    "log-symbols": "^3.0.0",
+    "meow": "^6.0.0",
+    "micro-dev": "^3.0.0",
+    "ora": "^4.0.3"
+  },
+  "devDependencies": {
+    "ava": "^2.4.0",
+    "nyc": "^15.0.0",
+    "xo": "^0.25.3"
+  }
+}
