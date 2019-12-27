@@ -9,7 +9,7 @@ const regex = {
 	validInput: /{ name: '\w+' }/,
 	invalidInput: /Unexpected token \w in JSON at position \d/,
 	emptyInput: /Specify a JSON template object/,
-	serverOutput: /Micro is running/,
+	serverOutput: /localhost:3000/,
 	serverPortOutput: /localhost:1337/
 };
 
@@ -51,22 +51,14 @@ test('invalid JSON w/ --json flag', async t => {
 
 test('--server flag', async t => {
 	const subprocess = execa('./cli.js', ['--server']);
-	setTimeout(() => {
-		subprocess.kill('SIGTERM', {
-			forceKillAfterTimeout: 10000
-		});
-	}, 15000);
+	setTimeout(() => subprocess.kill('SIGTERM'), 15000);
 	const {stdout} = await t.throwsAsync(subprocess);
 	t.regex(stdout, regex.serverOutput);
 });
 
 test('server with --port flag', async t => {
 	const subprocess = execa('./cli.js', ['--server', '--port', '1337']);
-	setTimeout(() => {
-		subprocess.kill('SIGTERM', {
-			forceKillAfterTimeout: 10000
-		});
-	}, 15000);
+	setTimeout(() => subprocess.kill('SIGTERM'), 15000);
 	const {stdout} = await t.throwsAsync(subprocess);
 	t.regex(stdout, regex.serverPortOutput);
 });
