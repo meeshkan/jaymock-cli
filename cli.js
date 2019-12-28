@@ -17,7 +17,7 @@ const cli = meow(`
     
 	Options
 	  --json, -j    Print output in JSON format
-	  --server, -s  Start the development server
+	  --server, -s  Start a development server for API mocking
 	  --port, -p    Specify a port number for the server
     
 	Examples
