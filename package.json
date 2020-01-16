@@ -1,6 +1,6 @@
 {
   "name": "@meeshkanml/jaymock-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Mock an API and generate fake JSON test data, right from the terminal.",
   "bin": {
     "jaymock": "cli.js"
