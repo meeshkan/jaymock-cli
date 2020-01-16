@@ -1,12 +1,12 @@
 {
-  "name": "@unmock/jaymock-cli",
+  "name": "@meeshkanml/jaymock-cli",
   "version": "1.0.0",
   "description": "Mock an API and generate fake JSON test data, right from the terminal.",
   "bin": {
     "jaymock": "cli.js"
   },
   "scripts": {
-    "dev": "npm explore @unmock/micro-jaymock -- npm run dev",
+    "dev": "npm explore @meeshkanml/micro-jaymock -- npm run dev",
     "test": "xo && ava",
     "coverage": "nyc npm test",
     "coverage:upload": "nyc report --reporter=lcov && codecov",
@@ -20,17 +20,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/unmock/jaymock-cli.git"
+    "url": "git+https://github.com/Meeshkan/jaymock-cli.git"
   },
-  "author": "unmock",
+  "author": "Meeshkan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/unmock/jaymock-cli/issues"
+    "url": "https://github.com/Meeshkan/jaymock-cli/issues"
   },
-  "homepage": "https://github.com/unmock/jaymock-cli#readme",
+  "homepage": "https://github.com/Meeshkan/jaymock-cli#readme",
   "dependencies": {
-    "@unmock/jaymock": "^1.0.10",
-    "@unmock/micro-jaymock": "github:unmock/micro-jaymock",
+    "@meeshkanml/jaymock": "^1.1.0",
+    "@meeshkanml/micro-jaymock": "github:Meeshkan/micro-jaymock",
     "execa": "^4.0.0",
     "get-stdin": "^7.0.0",
     "log-symbols": "^3.0.0",

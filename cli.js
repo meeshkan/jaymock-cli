@@ -2,7 +2,7 @@
 'use strict';
 const meow = require('meow');
 const logSymbols = require('log-symbols');
-const jaymock = require('@unmock/jaymock');
+const jaymock = require('@meeshkanml/jaymock');
 const ora = require('ora');
 const getStdin = require('get-stdin');
 const execa = require('execa');
