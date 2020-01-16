@@ -15,6 +15,14 @@
   "files": [
     "cli.js"
   ],
+  "keywords": [
+    "mock",
+    "json",
+    "api",
+    "fake",
+    "data",
+    "cli"
+  ],
   "engines": {
     "node": "12.x"
   },
